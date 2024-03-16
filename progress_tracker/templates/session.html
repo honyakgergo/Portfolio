@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            {{ exercise.title }}
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{ exercise.exercise_1 }}</li>
+            <li class="list-group-item">{{ exercise.exercise_2 }}</li>
+            <li class="list-group-item">{{ exercise.exercise_3 }}</li>
+            <li class="list-group-item">{{ exercise.exercise_4 }}</li>
+            <li class="list-group-item">{{ exercise.exercise_5 }}</li>
+            <div>
+                <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('update_session', session_id=exercise.id) }}">Update</a>
+                <button type="button" class="btn btn-danger btn-sm m-1" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+            </div>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="deleteModalLabel">Would you like to delete the session?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer" style="flex-wrap: nowrap">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+            <form style="display: inline" action="{{ url_for('delete_session', session_id=exercise.id) }}" method="POST">
+              <input class="btn btn-danger" type="submit" value="Delete">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
