@@ -1,0 +1,58 @@
+body.home {
+    background: url('https://cdn.wallpapersafari.com/67/26/vFWz3D.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+.card {
+    background-color: #D3D3D3;
+    color: #000000;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: #000000;
+}
+
+.card-body p {
+    text-align: right;
+}
+
+.card-link {
+    text-decoration: none
+}
+
+.card-link>.card:hover {
+    background-color: #A9A9A9;
+}
+
+.feedback-heading {
+    color: white;
+  }
+  
+  .contact-email {
+    color: white;
+  }
+
+  h1 {
+    color: white;
+    font-size: 64px; 
+    text-align: center;
+  }
+
+  form {
+    width: 600px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  h2 {
+    color: white;
+  }
