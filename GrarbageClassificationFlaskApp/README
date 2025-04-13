@@ -1,0 +1,57 @@
+🚀 Features
+📸 Real-Time Camera Integration
+Capture images of waste directly from your webcam through a sleek, phone-like interface.
+
+🖼️ Image Upload Option
+Prefer uploading? Choose an image from your device to classify instead.
+
+🤖 ML-Powered Waste Detection
+All images are sent to a /predict route that returns the predicted waste type. The app uses two ML models:
+
+1. Custom CNN
+
+Built with 3 convolutional layers, batch normalization, and dropout.
+
+Trained on both original and augmented datasets.
+
+Accuracy:
+
+76.8% (original)
+
+69.4% (augmented, due to challenging rotations and distortions)
+
+2. Transfer Learning with MobileNet
+
+Fine-tuned on the augmented dataset using ImageNet weights.
+
+Test Accuracy: 97.7%
+
+Exceptional precision and recall across all waste categories.
+
+Minimal and often ambiguous misclassifications.
+
+🗑️ Smart Bin Visualization
+Automatically displays a color-coded bin (e.g., blue for paper, yellow for plastic) based on the predicted waste type.
+
+👤 User Authentication
+Secure account system using Flask-Login
+
+New users can register via /register
+
+Passwords securely hashed with bcrypt
+
+Session-based login/logout support
+
+🌐 Responsive, Clean UI
+User-friendly interface built with HTML, CSS, and JavaScript for a seamless experience across devices.
+
+🛠️ Tech Stack
+Backend: Flask, Flask-Login, SQLAlchemy
+
+Frontend: HTML, CSS, JavaScript
+
+Machine Learning: TensorFlow / Keras, scikit-learn
+
+Database: SQLite (via SQLAlchemy ORM)
+
+Visualization & Analysis: NumPy, Matplotlib, Seaborn
