@@ -1,4 +1,4 @@
-# Stock Return Prediction with Graph Neural Networks
+# Exploring Graph Neural Networks for Stock Prediction: My First Quant Project
 
 A quantitative finance project exploring whether Graph Neural Networks can predict quarterly stock returns by modeling correlation relationships between S&P 500 stocks.
 
@@ -240,5 +240,6 @@ The project successfully tests whether graph-based deep learning can improve upo
 **Key Takeaway:** GNNs don't replace momentum, but they capture different information that improves risk-adjusted returns through better drawdown control.
 
 ---
+
 
 **Gergő Honyák**  Data Science & AI student
