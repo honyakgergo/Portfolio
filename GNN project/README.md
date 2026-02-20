@@ -1,6 +1,6 @@
 # Exploring Graph Neural Networks for Stock Prediction: My First Quant Project
 
-A quantitative finance project exploring whether Graph Neural Networks can predict quarterly stock returns by modeling correlation relationships between S&P 500 stocks.
+A quantitative finance project exploring whether Graph Neural Networks can predict quarterly stock returns by modeling correlation relationships between the current 100 Nasdaq100 (qqq) stocks.
 
 **Key Results:**
 - **27.3% annualized returns** (2005-2025, 83 quarters)
@@ -243,3 +243,4 @@ The project successfully tests whether graph-based deep learning can improve upo
 
 
 **Gergő Honyák**  Data Science & AI student
+
