@@ -4,14 +4,14 @@ skills, and passion for data science. Whether you're a recruiter, fellow develop
 
 What You'll Find Here
 This portfolio includes a variety of projects that demonstrate my skills in:
-Data Science & Machine Learning – Predictive modeling, data visualization, and deep learning.
+Data Science & Machine Learning - Predictive modeling, data visualization, and deep learning.
 Quantitative Research - Testing different finance ml strategies
-Web Development – Flask-based applications, backend logic, and interactive dashboards.
-Data Engineering – Database management, ETL pipelines, and data processing.
-Statistical Analysis – Hypothesis testing, A/B testing, and insights generation.
+Web Development - Flask-based applications, backend logic, and interactive dashboards.
+Data Engineering - Database management, ETL pipelines, and data processing.
+Statistical Analysis - Hypothesis testing, A/B testing, and insights generation.
 
 Featured Projects
-Progress Tracker – A Flask-Based Web App
+Progress Tracker - A Flask-Based Web App
 A Flask-powered application that allows users to create, track, and manage their workout sessions. This project showcases my skills in backend development, authentication, and database 
 management using Flask, SQLAlchemy, and bcrypt.
 
