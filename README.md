@@ -4,10 +4,15 @@ skills, and passion for data science. Whether you're a recruiter, fellow develop
 
 What You'll Find Here
 This portfolio includes a variety of projects that demonstrate my skills in:
+
 Data Science & Machine Learning - Predictive modeling, data visualization, and deep learning.
+
 Quantitative Research - Testing different finance ml strategies
+
 Web Development - Flask-based applications, backend logic, and interactive dashboards.
+
 Data Engineering - Database management, ETL pipelines, and data processing.
+
 Statistical Analysis - Hypothesis testing, A/B testing, and insights generation.
 
 Featured Projects
@@ -20,7 +25,7 @@ An interactive Power BI and Python-based dashboard that transforms raw data into
 
 Skills & Technologies
 🔹 Programming: Python (Pandas, NumPy, Scikit-Learn), SQL, Flask
-🔹 Machine Learning: Regression, Classification, Clustering,  Deep Learning-new in this topic but excited to explore!!!
+🔹 Machine Learning: Regression, Classification, Clustering, Deep Learning
 🔹 Data Visualization: Matplotlib, Seaborn, Power BI
 🔹 Database Management: SQLAlchemy, PostgreSQL, MySQL
 
