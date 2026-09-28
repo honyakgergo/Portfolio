@@ -23,14 +23,24 @@ A team, production-style MLOps system for Banijay Benelux: video/audio → trans
 
 <p align="center"><img src="sentify-emotion-pipeline/images/xai_gui.png" width="75%" alt="Sentify prediction interface" /></p>
 
+### [proper_validation — Adversarial Backtest Validator](proper-validation)
+A tool that attacks a backtest you've already run and reports how much of the claimed edge survives: deflated Sharpe against a simulated best-of-N null, probability of backtest overfitting, Fama-French 5 + momentum attribution, cost fragility, survivorship counted against real index membership, and a behavioural look-ahead test that re-runs the strategy on corrupted futures. Statistical and engine verdicts are kept separate. It detects 96% of the planted defects in the labelled benchmarks with 0% false positives on the one real edge, and ships as a CLI plus a Claude Code skill. ([repo](https://github.com/honyakgergo/proper-validation))
+
+<p align="center"><img src="proper-validation/images/haircut_cascade.png" width="75%" alt="Sharpe ratio after each honest adjustment" /></p>
+
 ### [money_dashboard](money-dashboard)
-A live market-analytics terminal — sector breadth and rotation, the full volatility complex (term structure, VVIX, SKEW, variance risk premium, dispersion), macro & regime (yfinance + FRED), and options positioning, across six pages driven by a market-session clock.
-<p align="center"><img src="money-dashboard\images\overview.png" width="75%" alt="Sentify prediction interface" /></p>
+A live market-analytics terminal, and the screen I actually read every day — sector breadth and rotation (RRG vs SPY), the full volatility complex (term structure, VVIX, SKEW, variance risk premium, dispersion), macro & regime (yfinance + FRED), commodities and roll yield, weekly positioning (CFTC asset-manager and leveraged-fund net, NAAIM, AAII), and per-name research with fundamentals, earnings, analyst opinion and the option surface next to the price chart. Ten pages driven by a market-session clock.
+<p align="center"><img src="money-dashboard/images/cross-asset-rrg.png" width="75%" alt="money_dashboard Cross-Asset page — Relative Rotation Graph and correlation matrix" /></p>
 
 ### [NPEC — Root Analysis, Robotics & Inpainting Research](npec-root-analysis)
 Two connected pieces of work with the Netherlands Plant Eco-phenotyping Centre: an end-to-end pipeline (U-Net segmentation → skeletonize → Dijkstra → sub-millimetre PID/RL robot inoculation) and a research study on repairing gaps in root masks (BCE U-Net winner, validated with Wilcoxon tests at p < 0.001 across 9,014 patches).
 
 <p align="center"><img src="npec-root-analysis/images/pid_controller.gif" width="60%" alt="PID-controlled robot arm" /></p>
+
+### [Clash Analyzer](clash-analyzer)
+A Clash Royale progress tracker and battle-analytics dashboard on the official API. The API only remembers the last ~30 games, so a background poller stores every battle and profile snapshot. From that history it computes tilt detection, session fatigue, levels vs skill, nemesis cards, an upgrade planner, and a comparison against a daily crawl of the top-100 meta. Every rate comes with a Wilson interval. FastAPI + SQLite backend, React 19 + TypeScript frontend. ([repo](https://github.com/honyakgergo/clash-analyzer))
+
+<p align="center"><img src="clash-analyzer/images/overview.png" width="75%" alt="Clash Analyzer player overview" /></p>
 
 ### [Waste Warrior](waste-warrior)
 A deep-learning waste classifier wrapped in a full Flask app: MobileNet transfer learning to 97.7% accuracy, with Grad-CAM / LIME / integrated-gradients explainability to confirm the model looks at the object, not the background.
