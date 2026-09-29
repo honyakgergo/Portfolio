@@ -9,12 +9,12 @@ Most of my recent work points at **quantitative finance**: strategy research, ba
 ## Featured projects
 
 ### [SwingLab](swinglab)
-A research platform, backtester, and live monitor for a combined mean-reversion + momentum book — run with real capital. FastAPI + React, with a full stress-test suite (walk-forward, crisis periods, block-bootstrap Monte Carlo, parameter sensitivity).
+A research platform, backtester, and live monitor, and MOM_BROAD, the weekly cross-sectional momentum strategy it runs with real capital since February 2026: a 34.7% CAGR at a 1.27 Sharpe backtested daily since 2016, and a 1.59 Sharpe live so far. FastAPI + React, with a full stress-test suite (walk-forward, crisis periods, block-bootstrap Monte Carlo, parameter sensitivity).
 
 <p align="center"><img src="swinglab/images/equity_curve.png" width="75%" alt="SwingLab equity curve" /></p>
 
 ### [Graph Neural Networks for Stock Prediction](GNN%20project)
-My first quant project: can a GNN predict quarterly Nasdaq-100 returns by modelling the correlation graph between stocks? Statistically significant predictive power (IC 0.051, t = 2.77, p = 0.007) over an 83-quarter walk-forward, validated against Fama-French factors.
+My first quant project: can a GNN predict quarterly Nasdaq-100 returns by modelling the correlation graph between stocks? Statistically significant predictive power (IC 0.051, t = 2.77, p = 0.007) over an 83-quarter walk-forward, and a 9.48% annualised alpha against QQQ (t = 2.80, p = 0.005).
 
 <p align="center"><img src="GNN%20project/visuals/cumulative.png" width="75%" alt="GNN cumulative returns" /></p>
 
@@ -47,6 +47,15 @@ A deep-learning waste classifier wrapped in a full Flask app: MobileNet transfer
 
 <p align="center"><img src="waste-warrior/images/output_1.png" width="45%" alt="Waste classifier prediction" /></p>
 <p align="center"><img src="waste-warrior/images/output_2.png" width="45%" alt="Waste classifier prediction" /></p>
+
+---
+
+## More projects
+
+- **[VTSZ customs classifier](vtsz-customs-classifier):** a self-hosted vision-language model (Qwen2.5-VL on Ollama) that replaces a manual Excel and PDF customs-classification workflow for a client.
+- **[IMC Prosperity 4](imc-prosperity-4):** a global algorithmic trading competition, 223rd of ~18,800 teams solo and 1st in the Netherlands on the manual round.
+- **[Receipt extraction](receipt-extraction):** Tesseract OCR plus a Llama model that turns messy scanned receipts into clean structured data.
+- **[AI Engineer internship](ai-engineer-internship):** a production RAG system with a custom LLaMA model and an interactive avatar, deployed on GCP.
 
 ---
 

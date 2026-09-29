@@ -2,7 +2,7 @@
 
 **My quantitative research platform — and MOM_BROAD, the systematic momentum strategy that came out of it and now trades live with real capital.**
 
-SwingLab is where a trading idea goes from a hypothesis to something I'd actually risk money on: a data layer, a backtesting and stress-testing engine, and a monitoring app, all built from scratch. The strategy it runs live — **MOM_BROAD** — is a broad cross-sectional momentum system over the S&P 500 + Nasdaq-100, developed and walk-forward validated inside the platform and live since January 2026.
+SwingLab is where a trading idea goes from a hypothesis to something I'd actually risk money on: a data layer, a backtesting and stress-testing engine, and a monitoring app, all built from scratch. The strategy it runs live, **MOM_BROAD**, is a broad cross-sectional momentum system over the S&P 500 + Nasdaq-100, developed and walk-forward validated inside the platform and live since February 2026.
 
 <p align="center"><img src="images/platform_ui.png" width="85%" alt="SwingLab platform UI" /></p>
 
@@ -61,10 +61,10 @@ I A/B-tested several sizing schemes against plain equal-weight (Carver-style con
 
 ## Results
 
-Over the backtest (Dec 2016 → Jul 2026), MOM_BROAD grew **€10,000 into roughly €155,000 — about a 33% CAGR** before the survivorship caveat above. More important than the headline number is *how* it got there: the VIX overlay and trend gate are designed to cut the deep drawdowns that plain momentum suffers in a crash.
+Over the daily backtest (12 Dec 2016 to 4 Sep 2026), MOM_BROAD grew **10,000 into roughly 181,000 (+1,712%): a 34.7% CAGR at a 1.27 Sharpe, with a −21.2% max drawdown**, before the survivorship caveat above. Live since 2 February 2026 the real account is up **51.8% at a 1.59 Sharpe**, with a −20.1% max drawdown. These are the same figures the portfolio site shows, read off the same daily equity series. More important than the headline number is *how* it got there: the VIX overlay and trend gate are designed to cut the deep drawdowns that plain momentum suffers in a crash.
 
 <p align="center">
-  <img src="images/equity_curve.png" width="90%" alt="MOM_BROAD equity curve" />
+  <img src="images/equity_curve.png" width="90%" alt="MOM_BROAD daily equity curve and drawdown, log scale, with out-of-market periods and the live stretch shaded" />
 </p>
 
 ### Validation
@@ -91,7 +91,7 @@ Because a good backtest is easy to fake, the strategy is checked the way I'd wan
 
 ## Honesty box
 
-The things the backtest does **not** get to pretend away: current-constituent universes carry survivorship bias (flagged, ~1–3% CAGR); transaction costs are modelled but slippage is approximate; and live results since January 2026 are a tiny sample, not a verdict. Writing these down is part of the discipline — a strategy you can't criticise is one you don't understand.
+The things the backtest does **not** get to pretend away: current-constituent universes carry survivorship bias (flagged, ~1–3% CAGR); transaction costs are modelled but slippage is approximate; and live results since February 2026 are a tiny sample, not a verdict. Writing these down is part of the discipline: a strategy you can't criticise is one you don't understand.
 
 ## Stack
 
