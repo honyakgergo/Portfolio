@@ -31,9 +31,13 @@
    - The sector cap was only applied to new candidates, which is how the book ended up with four tech names.
    - On 22 September 2026 Yahoo served a bar with no closes, blank prices read as failed momentum, and the runner proposed selling the whole book. A trading date now needs 90% universe coverage, and missing data is treated as unknown, never as a sell signal.
 
+## Survivorship-free test
+
+The headline backtest uses today's index members, which flatters momentum because it only includes stocks that survived. So I re-ran it on point-in-time index membership, trading only the stocks that were actually in the index on each date. The result is **21% CAGR, a 0.84 Sharpe, a -32% max drawdown and a 58% win rate**. That is well below the headline figures, so survivorship was worth about 14 points of CAGR. But the strategy still returns clearly more than SPY, with a Sharpe and a max drawdown slightly better than SPY's, and the win rate did not change.
+
 ## Caveats
 
-- **Survivorship bias.** The universe is today's constituents, which flatters momentum in particular. The size of that effect has not been measured yet.
+- **Survivorship bias.** The headline numbers use today's constituents. The survivorship-free result above is the more honest backtest.
 - **Many rules.** Lookbacks, thresholds and caps add up to a lot of choices, so the backtest is an upper bound, not an estimate.
 - **Short live record.** Seven months of live trading is not statistical evidence.
 - **Costs.** A flat 10 bps per trade, no slippage model.

@@ -2,7 +2,7 @@
 
 Data Science & AI pre-master student at TU/e, with a BSc background in Applied Data Science & AI from Breda University of Applied Sciences. Most of my recent work is quantitative finance: strategy research, backtest validation and a momentum strategy I trade with real money. Before that I built computer vision, NLP and MLOps projects, and spent a year as an AI engineer intern.
 
-Each folder has a short write-up with figures.
+Each folder has a short write-up with figures. Certified as an Associate Data Scientist by DataCamp ([certificate](certifications)).
 
 ## Quant
 
