@@ -1,19 +1,14 @@
-# AI Engineer internship
+# AI Engineer internship · AIGENTIC Compliance
 
-**RAG, a custom LLaMA model, and an interactive avatar, live to real users.**
+**Jun 2025 to Jun 2026. A production RAG assistant on a self-hosted Llama model, deployed on Google Cloud.**
 
-Internship · Production ML · 2025 · Jun 2025 – Jun 2026
+## What I built
 
-| System type | Cloud Run + Firebase | Demo layer |
-|---|---|---|
-| **RAG** | **GCP** | **Unity** |
+- **Model serving.** A Llama 3 model containerised and deployed on GCP Cloud Run, tuned for low response latency. The container scales to zero during night hours, which cuts cloud cost when nobody is using it.
+- **RAG pipeline.** Retrieval over company documents, so answers are grounded in the source material rather than the model's memory.
+- **Proxy API.** A proxy layer between the frontend, the model and the external APIs, built with a senior engineer and slotted into the existing infrastructure.
+- **CI/CD.** An automated pipeline that runs tests and linting on every change before building and deploying.
+- **Usage dashboard.** A monitoring dashboard on GCP that queries the stored user data: interactions, API calls and performance across the website and the app.
+- **Frontend.** A FastAPI backend with a JavaScript frontend and an interactive avatar interface, plus a small Unity demo of the product.
 
----
-
-An AI engineering internship at AIGENTIC Compliance, building a production Retrieval-Augmented Generation system with an interactive avatar interface, wiring a custom LLaMA model together with external APIs behind it.
-
-The application is full-stack: a FastAPI backend and JavaScript frontend with hardened security and robust API integrations, deployed across Google Cloud Run and Firebase. I worked with a senior engineer to slot a complex proxy system into the existing infrastructure, and shipped a Unity demo game that showcases the product to users.
-
-Alongside the core system I built a monitoring dashboard tracking user interactions, API calls, and performance across both the site and the app, and helped update the company website so the RAG system and its interactive features integrate seamlessly.
-
-**Stack:** `FastAPI` · `LLaMA` · `GCP` · `Firebase` · `Unity`
+**Stack:** Python · FastAPI · Llama · GCP Cloud Run · Firebase · Docker · CI/CD · JavaScript
